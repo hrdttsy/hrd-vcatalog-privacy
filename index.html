@@ -1,0 +1,729 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>HRD Vカタログ プライバシーポリシー / Privacy Policy</title>
+<meta name="description" content="HRD Vカタログ（Vcatalog）のプライバシーポリシー。日本語・英語対応。 / Privacy Policy for HRD Vcatalog, available in Japanese and English." />
+<style>
+  :root {
+    color-scheme: light;
+    --bg: #f5f8fc;
+    --bg-band-1: #eef3fa;
+    --bg-band-2: #e4ecf7;
+    --surface: #ffffff;
+    --surface-raised: #ffffff;
+    --text: #0b1526;
+    --text-muted: #55637a;
+    --text-faint: #8794a8;
+    --border: #e1e7f0;
+    --border-strong: #cfd9e8;
+    --accent-1: #0891b2;
+    --accent-2: #2f6fed;
+    --accent-tint: #eaf6fb;
+    --focus-ring: #2f6fed;
+    --code-bg: #eef2f8;
+    --shadow: 0 1px 2px rgba(15, 30, 60, 0.04), 0 8px 24px -12px rgba(15, 30, 60, 0.12);
+  }
+
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      color-scheme: dark;
+      --bg: #050b18;
+      --bg-band-1: #081020;
+      --bg-band-2: #0a1425;
+      --surface: #0c1526;
+      --surface-raised: #101c33;
+      --text: #e8edf7;
+      --text-muted: #9aa7c0;
+      --text-faint: #6d7891;
+      --border: #1c2946;
+      --border-strong: #263757;
+      --accent-1: #22d3ee;
+      --accent-2: #5b9bff;
+      --accent-tint: #0c2433;
+      --focus-ring: #5b9bff;
+      --code-bg: #101c33;
+      --shadow: 0 1px 2px rgba(0, 0, 0, 0.3), 0 12px 32px -16px rgba(0, 0, 0, 0.6);
+    }
+  }
+
+  :root[data-theme="dark"] {
+    color-scheme: dark;
+    --bg: #050b18;
+    --bg-band-1: #081020;
+    --bg-band-2: #0a1425;
+    --surface: #0c1526;
+    --surface-raised: #101c33;
+    --text: #e8edf7;
+    --text-muted: #9aa7c0;
+    --text-faint: #6d7891;
+    --border: #1c2946;
+    --border-strong: #263757;
+    --accent-1: #22d3ee;
+    --accent-2: #5b9bff;
+    --accent-tint: #0c2433;
+    --focus-ring: #5b9bff;
+    --code-bg: #101c33;
+    --shadow: 0 1px 2px rgba(0, 0, 0, 0.3), 0 12px 32px -16px rgba(0, 0, 0, 0.6);
+  }
+
+  * { box-sizing: border-box; }
+
+  html { -webkit-text-size-adjust: 100%; }
+
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--text);
+    font-family: -apple-system, "Segoe UI", Roboto, "Hiragino Kaku Gothic ProN", "Hiragino Sans",
+      "Yu Gothic UI", "Noto Sans JP", "Helvetica Neue", Arial, sans-serif;
+    line-height: 1.7;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+  }
+
+  a { color: var(--accent-2); text-decoration-thickness: from-font; }
+  a:hover { text-decoration-color: var(--accent-1); }
+  a:focus-visible,
+  button:focus-visible {
+    outline: 2px solid var(--focus-ring);
+    outline-offset: 2px;
+    border-radius: 4px;
+  }
+
+  /* ---------- Top bar ---------- */
+  .topbar {
+    position: sticky;
+    top: 0;
+    z-index: 20;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    padding: 14px clamp(16px, 4vw, 40px);
+    background: color-mix(in srgb, var(--surface) 88%, transparent);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-bottom: 1px solid var(--border);
+  }
+
+  .brand {
+    display: flex;
+    align-items: baseline;
+    gap: 10px;
+    min-width: 0;
+  }
+
+  .brand-mark {
+    font-family: -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
+    font-weight: 800;
+    font-size: 1.05rem;
+    letter-spacing: 0.06em;
+    background: linear-gradient(100deg, var(--accent-1), var(--accent-2));
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    white-space: nowrap;
+  }
+
+  .brand-name {
+    font-size: 0.92rem;
+    color: var(--text-muted);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .lang-toggle {
+    display: inline-flex;
+    border: 1px solid var(--border-strong);
+    border-radius: 999px;
+    padding: 3px;
+    background: var(--surface);
+    flex: none;
+  }
+
+  .lang-toggle button {
+    appearance: none;
+    border: none;
+    background: transparent;
+    color: var(--text-muted);
+    font: inherit;
+    font-size: 0.82rem;
+    font-weight: 600;
+    letter-spacing: 0.02em;
+    padding: 6px 14px;
+    border-radius: 999px;
+    cursor: pointer;
+    transition: background-color 0.15s ease, color 0.15s ease;
+  }
+
+  .lang-toggle button[aria-pressed="true"] {
+    background: linear-gradient(100deg, var(--accent-1), var(--accent-2));
+    color: #ffffff;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .lang-toggle button { transition: none; }
+  }
+
+  /* ---------- Header band ---------- */
+  .hero {
+    background:
+      radial-gradient(120% 180% at 15% -20%, color-mix(in srgb, var(--accent-1) 20%, transparent), transparent 60%),
+      linear-gradient(180deg, var(--bg-band-1), var(--bg-band-2));
+    border-bottom: 1px solid var(--border);
+    padding: clamp(36px, 8vw, 64px) clamp(16px, 4vw, 40px) clamp(28px, 5vw, 44px);
+  }
+
+  .hero-inner { max-width: 760px; margin: 0 auto; }
+
+  .eyebrow {
+    display: inline-block;
+    font-size: 0.78rem;
+    font-weight: 700;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--accent-2);
+    margin: 0 0 14px;
+  }
+
+  h1 {
+    font-size: clamp(1.6rem, 4.4vw, 2.3rem);
+    line-height: 1.32;
+    letter-spacing: -0.01em;
+    margin: 0 0 12px;
+    text-wrap: balance;
+  }
+
+  .hero-meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px 18px;
+    font-size: 0.9rem;
+    color: var(--text-muted);
+    font-variant-numeric: tabular-nums;
+  }
+
+  /* ---------- Layout ---------- */
+  .page {
+    max-width: 760px;
+    margin: 0 auto;
+    padding: clamp(28px, 6vw, 48px) clamp(16px, 4vw, 40px) 80px;
+  }
+
+  nav.toc {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 14px;
+    padding: 20px clamp(16px, 4vw, 26px);
+    margin: 0 0 40px;
+    box-shadow: var(--shadow);
+  }
+
+  nav.toc h2 {
+    margin: 0 0 12px;
+    font-size: 0.78rem;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--text-faint);
+  }
+
+  nav.toc ol {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    columns: 1;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+    gap: 6px 20px;
+  }
+
+  nav.toc li { font-size: 0.92rem; }
+
+  nav.toc a {
+    color: var(--text);
+    text-decoration: none;
+    display: flex;
+    gap: 8px;
+  }
+
+  nav.toc a:hover { color: var(--accent-2); }
+
+  nav.toc .num {
+    font-variant-numeric: tabular-nums;
+    color: var(--text-faint);
+    min-width: 1.4em;
+  }
+
+  article section {
+    padding: 30px 0;
+    border-top: 1px solid var(--border);
+    scroll-margin-top: 84px;
+  }
+
+  article section:first-of-type { border-top: none; padding-top: 0; }
+
+  h2 {
+    display: flex;
+    align-items: baseline;
+    gap: 12px;
+    font-size: 1.24rem;
+    letter-spacing: -0.005em;
+    margin: 0 0 14px;
+    text-wrap: balance;
+  }
+
+  h2 .num {
+    font-variant-numeric: tabular-nums;
+    font-size: 0.95rem;
+    font-weight: 700;
+    color: var(--accent-2);
+    flex: none;
+  }
+
+  h3 {
+    font-size: 1rem;
+    margin: 20px 0 8px;
+    color: var(--text);
+  }
+
+  p { margin: 0 0 14px; max-width: 66ch; }
+  p:last-child { margin-bottom: 0; }
+
+  ul, ol.plain { margin: 0 0 14px; padding-left: 1.3em; max-width: 66ch; }
+  li { margin: 0 0 6px; }
+  li:last-child { margin-bottom: 0; }
+
+  .lede {
+    font-size: 1.05rem;
+    color: var(--text-muted);
+    max-width: 62ch;
+  }
+
+  .card-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+    gap: 14px;
+    margin: 4px 0 18px;
+  }
+
+  .card {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 16px 18px;
+  }
+
+  .card h3 {
+    margin: 0 0 6px;
+    font-size: 0.94rem;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+
+  .card p { margin: 0; font-size: 0.9rem; color: var(--text-muted); }
+
+  .dot {
+    width: 8px; height: 8px; border-radius: 50%; flex: none;
+  }
+  .dot.no { background: var(--text-faint); }
+  .dot.yes { background: linear-gradient(100deg, var(--accent-1), var(--accent-2)); }
+
+  .callout {
+    border: 1px solid var(--border-strong);
+    background: var(--accent-tint);
+    border-radius: 12px;
+    padding: 16px 18px;
+    margin: 4px 0 18px;
+    font-size: 0.92rem;
+  }
+
+  .callout p { margin: 0; max-width: none; }
+  .callout p + p { margin-top: 8px; }
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.9rem;
+    margin: 6px 0 18px;
+  }
+
+  caption { text-align: left; font-size: 0.8rem; color: var(--text-faint); margin-bottom: 8px; }
+
+  th, td {
+    text-align: left;
+    padding: 10px 12px;
+    border-bottom: 1px solid var(--border);
+    vertical-align: top;
+  }
+
+  th {
+    font-size: 0.76rem;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--text-faint);
+    font-weight: 600;
+  }
+
+  .table-wrap { overflow-x: auto; margin: 0 0 18px; }
+  .table-wrap table { margin-bottom: 0; }
+
+  code {
+    font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+    background: var(--code-bg);
+    border-radius: 4px;
+    padding: 0.1em 0.4em;
+    font-size: 0.88em;
+  }
+
+  footer {
+    max-width: 760px;
+    margin: 0 auto;
+    padding: 28px clamp(16px, 4vw, 40px) 56px;
+    color: var(--text-faint);
+    font-size: 0.84rem;
+    border-top: 1px solid var(--border);
+  }
+
+  footer a { color: var(--text-muted); }
+
+  [data-lang-content] { display: none; }
+  html[data-active-lang="ja"] [data-lang-content="ja"] { display: block; }
+  html[data-active-lang="en"] [data-lang-content="en"] { display: block; }
+  html[data-active-lang="ja"] .lang-toggle [data-lang-btn="ja"],
+  html[data-active-lang="en"] .lang-toggle [data-lang-btn="en"] { }
+
+  @media (max-width: 560px) {
+    .brand-name { display: none; }
+    nav.toc ol { grid-template-columns: 1fr; }
+  }
+
+  @media print {
+    .topbar, nav.toc { display: none; }
+    .hero { background: none; border-bottom: 1px solid #ccc; }
+    body { color: #000; background: #fff; }
+    a { color: #000; text-decoration: underline; }
+    section { break-inside: avoid; border-top-color: #ccc; }
+  }
+</style>
+</head>
+<body>
+
+<div class="topbar">
+  <div class="brand">
+    <span class="brand-mark">HRD</span>
+    <span class="brand-name" data-lang-content="ja">Vカタログ &mdash; プライバシーポリシー</span>
+    <span class="brand-name" data-lang-content="en">Vcatalog &mdash; Privacy Policy</span>
+  </div>
+  <div class="lang-toggle" role="group" aria-label="Language / 言語">
+    <button type="button" data-lang-btn="ja" aria-pressed="true">日本語</button>
+    <button type="button" data-lang-btn="en" aria-pressed="false">English</button>
+  </div>
+</div>
+
+<header class="hero">
+  <div class="hero-inner">
+    <div data-lang-content="ja">
+      <p class="eyebrow">Privacy Policy</p>
+      <h1>HRD Vカタログ プライバシーポリシー</h1>
+      <p class="lede">Vカタログは、お使いの端末内の動画とご自身のNAS（ネットワークストレージ）だけを対象に動作する、完全ローカル型の動画ライブラリアプリです。このページでは、アプリが扱う情報とその扱い方について説明します。</p>
+    </div>
+    <div data-lang-content="en">
+      <p class="eyebrow">Privacy Policy</p>
+      <h1>HRD Vcatalog Privacy Policy</h1>
+      <p class="lede">Vcatalog is a fully local video library app that works only with videos on your own device and, optionally, your own network storage (NAS). This page explains what information the app handles and how.</p>
+    </div>
+    <div class="hero-meta">
+      <span data-lang-content="ja">最終更新日: 2026年8月15日</span>
+      <span data-lang-content="en">Last updated: August 15, 2026</span>
+      <span data-lang-content="ja">対象アプリ: HRD Vカタログ（Vcatalog、Android）</span>
+      <span data-lang-content="en">Applies to: HRD Vcatalog for Android</span>
+    </div>
+  </div>
+</header>
+
+<main class="page">
+
+  <nav class="toc" aria-label="Table of contents">
+    <div data-lang-content="ja">
+      <h2>目次</h2>
+      <ol>
+        <li><a href="#no-collection"><span class="num">1.</span>収集しない情報</a></li>
+        <li><a href="#local-data"><span class="num">2.</span>端末内にのみ保存される情報</a></li>
+        <li><a href="#nas"><span class="num">3.</span>ネットワークストレージ（NAS）機能</a></li>
+        <li><a href="#permissions"><span class="num">4.</span>アクセス許可について</a></li>
+        <li><a href="#third-party"><span class="num">5.</span>サードパーティサービス</a></li>
+        <li><a href="#retention"><span class="num">6.</span>データの保持と削除</a></li>
+        <li><a href="#security"><span class="num">7.</span>セキュリティ</a></li>
+        <li><a href="#children"><span class="num">8.</span>お子様のプライバシー</a></li>
+        <li><a href="#changes"><span class="num">9.</span>本ポリシーの変更</a></li>
+        <li><a href="#contact"><span class="num">10.</span>お問い合わせ</a></li>
+      </ol>
+    </div>
+    <div data-lang-content="en">
+      <h2>Contents</h2>
+      <ol>
+        <li><a href="#no-collection"><span class="num">1.</span>Information We Do Not Collect</a></li>
+        <li><a href="#local-data"><span class="num">2.</span>Data Stored Only on Your Device</a></li>
+        <li><a href="#nas"><span class="num">3.</span>Network Storage (NAS) Feature</a></li>
+        <li><a href="#permissions"><span class="num">4.</span>Permissions We Use</a></li>
+        <li><a href="#third-party"><span class="num">5.</span>Third-Party Services</a></li>
+        <li><a href="#retention"><span class="num">6.</span>Data Retention &amp; Deletion</a></li>
+        <li><a href="#security"><span class="num">7.</span>Security</a></li>
+        <li><a href="#children"><span class="num">8.</span>Children's Privacy</a></li>
+        <li><a href="#changes"><span class="num">9.</span>Changes to This Policy</a></li>
+        <li><a href="#contact"><span class="num">10.</span>Contact</a></li>
+      </ol>
+    </div>
+  </nav>
+
+  <article>
+
+    <section id="no-collection">
+      <div data-lang-content="ja">
+        <h2><span class="num">1</span>収集しない情報</h2>
+        <p>Vカタログは、開発者のサーバーやいかなる第三者にも、お客様を特定できる情報を送信しません。具体的には、次のようなことを行いません。</p>
+        <div class="card-grid">
+          <div class="card"><h3><span class="dot no"></span>アカウント登録・ログイン</h3><p>本アプリの利用にアカウント作成やサインインは不要です。</p></div>
+          <div class="card"><h3><span class="dot no"></span>利用状況の分析（アナリティクス）</h3><p>行動計測・広告SDK・クラッシュレポートSDKなど、外部の計測ツールは組み込んでいません。</p></div>
+          <div class="card"><h3><span class="dot no"></span>広告</h3><p>本アプリに広告表示の機能はありません。</p></div>
+          <div class="card"><h3><span class="dot no"></span>動画・視聴履歴のクラウド送信</h3><p>動画ファイルやその一覧・視聴履歴が、開発者を含むどこかへアップロードされることはありません。</p></div>
+        </div>
+      </div>
+      <div data-lang-content="en">
+        <h2><span class="num">1</span>Information We Do Not Collect</h2>
+        <p>Vcatalog does not send personally identifiable information to the developer's servers or to any third party. Specifically, the app does not:</p>
+        <div class="card-grid">
+          <div class="card"><h3><span class="dot no"></span>Require an account</h3><p>No account creation or sign-in is needed to use the app.</p></div>
+          <div class="card"><h3><span class="dot no"></span>Use analytics</h3><p>No third-party analytics, advertising, or crash-reporting SDKs are embedded in the app.</p></div>
+          <div class="card"><h3><span class="dot no"></span>Show ads</h3><p>The app has no advertising functionality of any kind.</p></div>
+          <div class="card"><h3><span class="dot no"></span>Upload your videos or history</h3><p>Your video files, library listing, and watch history are never uploaded anywhere, including to the developer.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="local-data">
+      <div data-lang-content="ja">
+        <h2><span class="num">2</span>端末内にのみ保存される情報</h2>
+        <p>Vカタログの各機能は、次の情報をすべて<strong>お使いの端末内だけ</strong>に保存します。これらの情報がネットワークを通じて外部へ送信されることはありません。</p>
+        <div class="table-wrap">
+          <table>
+            <caption>端末内に保存される情報の種類</caption>
+            <thead>
+              <tr><th>機能</th><th>保存される情報</th></tr>
+            </thead>
+            <tbody>
+              <tr><td>カタログ・動画一覧</td><td>ユーザーが選択したフォルダ内の動画のファイル名・サイズ・再生時間などのメタデータ</td></tr>
+              <tr><td>サムネイル</td><td>動画から自動生成した縮小画像（端末内キャッシュ）</td></tr>
+              <tr><td>ブックマーク・タグ</td><td>ユーザーが動画に付けたブックマーク位置、メモ、タグ、お気に入り</td></tr>
+              <tr><td>再生位置</td><td>各動画の続きから再生するための視聴位置</td></tr>
+              <tr><td>スクリーンショット</td><td>再生中にユーザーが撮影した画像（端末の写真フォルダに保存）</td></tr>
+              <tr><td>バックアップファイル</td><td>ユーザーが明示的に書き出しを行った場合のみ生成される、上記データのエクスポートファイル</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <p>これらはすべてAndroidの標準的なアプリ専用データ領域（データベース）またはユーザー自身が指定した保存先に置かれ、Vカタログ以外のアプリや外部サーバーから直接アクセスされることはありません。バックアップファイルの保存場所や共有方法は、常にユーザー自身が選択します。</p>
+      </div>
+      <div data-lang-content="en">
+        <h2><span class="num">2</span>Data Stored Only on Your Device</h2>
+        <p>The features below each store information <strong>only on your own device</strong>. None of this data is transmitted anywhere over a network.</p>
+        <div class="table-wrap">
+          <table>
+            <caption>Categories of data stored on-device</caption>
+            <thead>
+              <tr><th>Feature</th><th>Data stored</th></tr>
+            </thead>
+            <tbody>
+              <tr><td>Catalog &amp; video list</td><td>Metadata (file name, size, duration, etc.) for videos in folders you chose</td></tr>
+              <tr><td>Thumbnails</td><td>Preview images generated from your videos, cached on-device</td></tr>
+              <tr><td>Bookmarks &amp; tags</td><td>Bookmark positions, notes, tags, and favorites you add to a video</td></tr>
+              <tr><td>Playback position</td><td>Where you left off in each video, so playback can resume</td></tr>
+              <tr><td>Screenshots</td><td>Frames you capture during playback, saved to your device's photo storage</td></tr>
+              <tr><td>Backup file</td><td>An export of the data above, created only when you explicitly choose to export it</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <p>All of this lives in the app's standard private storage area (a local database) or wherever you yourself chose to save it. No other app or external server has direct access to it. You always control where a backup file is saved or shared.</p>
+      </div>
+    </section>
+
+    <section id="nas">
+      <div data-lang-content="ja">
+        <h2><span class="num">3</span>ネットワークストレージ（NAS）機能</h2>
+        <p>Vカタログには、ご自身が所有・管理するNAS（ネットワークストレージ）上の動画をSMB/CIFSプロトコルで閲覧・再生できる任意機能があります。この機能は登録しなければ使用されません。</p>
+        <div class="callout">
+          <p><strong>接続情報の保存先:</strong> サーバーアドレス、共有名、ユーザー名、パスワードは、Android OS標準のセキュリティ機構（Android Keystore）で暗号化したうえで、お使いの端末内にのみ保存されます。</p>
+          <p><strong>通信先:</strong> これらの接続情報や動画データが送受信されるのは、ユーザーが指定したご自身のNAS機器との間のみです。開発者のサーバーや第三者を経由することは一切ありません。</p>
+        </div>
+        <p>NASカタログを削除すると、対応する接続情報（暗号化された認証情報を含む）も端末から削除されます。</p>
+      </div>
+      <div data-lang-content="en">
+        <h2><span class="num">3</span>Network Storage (NAS) Feature</h2>
+        <p>Vcatalog includes an optional feature that lets you browse and play videos on your own network storage (NAS) device using the SMB/CIFS protocol. This feature is inactive until you set it up yourself.</p>
+        <div class="callout">
+          <p><strong>Where connection details are stored:</strong> The server address, share name, username, and password are encrypted using the Android Keystore system and stored only on your own device.</p>
+          <p><strong>Where they are sent:</strong> This connection information and any video data travel only between your device and the NAS device you configured. Nothing passes through the developer's servers or any third party.</p>
+        </div>
+        <p>Removing a network catalog also deletes its stored connection details (including the encrypted credentials) from your device.</p>
+      </div>
+    </section>
+
+    <section id="permissions">
+      <div data-lang-content="ja">
+        <h2><span class="num">4</span>アクセス許可について</h2>
+        <div class="table-wrap">
+          <table>
+            <caption>本アプリが要求するアクセス許可とその用途</caption>
+            <thead>
+              <tr><th>アクセス許可</th><th>用途</th></tr>
+            </thead>
+            <tbody>
+              <tr><td>フォルダへのアクセス（システムのフォルダ選択画面経由）</td><td>ユーザーが「カタログ」として明示的に選んだフォルダの動画のみを読み取ります。端末内を無差別にスキャンすることはありません。</td></tr>
+              <tr><td>ネットワーク（インターネット/ネットワーク状態）</td><td>ユーザーが設定したNASとの接続専用です。それ以外の通信には使用しません。</td></tr>
+              <tr><td>通知・バックグラウンド実行</td><td>アプリ内の処理状況を端末上でお知らせするための権限で、宣伝・マーケティング目的の通知配信には使用しません。</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <div data-lang-content="en">
+        <h2><span class="num">4</span>Permissions We Use</h2>
+        <div class="table-wrap">
+          <table>
+            <caption>Permissions requested and what they're for</caption>
+            <thead>
+              <tr><th>Permission</th><th>Purpose</th></tr>
+            </thead>
+            <tbody>
+              <tr><td>Folder access (via the system's own folder picker)</td><td>Reads video files only from folders you explicitly chose as a catalog. The app never scans your device indiscriminately.</td></tr>
+              <tr><td>Network (Internet / network state)</td><td>Used solely to connect to a NAS you configure. No other network communication occurs.</td></tr>
+              <tr><td>Notifications &amp; background execution</td><td>Reserved for on-device status updates about app activity; never used to deliver marketing or promotional notifications.</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <section id="third-party">
+      <div data-lang-content="ja">
+        <h2><span class="num">5</span>サードパーティサービス</h2>
+        <p>本アプリは、広告SDK・分析SDK・クラッシュレポートSDKなど、外部の第三者サービスを組み込んでいません。動画再生にはオープンソースのMedia3/ExoPlayerライブラリを、NAS接続にはオープンソースのSMBクライアントライブラリを使用していますが、いずれも端末内で動作する部品であり、これら自体が外部へデータを送信することはありません。</p>
+      </div>
+      <div data-lang-content="en">
+        <h2><span class="num">5</span>Third-Party Services</h2>
+        <p>The app does not embed any third-party advertising, analytics, or crash-reporting SDKs. It uses the open-source Media3/ExoPlayer library for playback and an open-source SMB client library for NAS connectivity; both run entirely on-device and do not themselves transmit data anywhere.</p>
+      </div>
+    </section>
+
+    <section id="retention">
+      <div data-lang-content="ja">
+        <h2><span class="num">6</span>データの保持と削除</h2>
+        <ul>
+          <li>アプリを<strong>アンインストール</strong>すると、上記の端末内データ（カタログ情報、サムネイル、ブックマーク、暗号化されたNAS接続情報を含む）はAndroidの仕組みにより端末から削除されます。</li>
+          <li>個別のカタログ・ブックマーク・タグは、アプリ内の操作でいつでも削除できます。</li>
+          <li>ユーザー自身が書き出したバックアップファイルは、アプリの管理外にあるため、削除にはユーザー自身の操作が必要です。</li>
+        </ul>
+      </div>
+      <div data-lang-content="en">
+        <h2><span class="num">6</span>Data Retention &amp; Deletion</h2>
+        <ul>
+          <li><strong>Uninstalling</strong> the app removes all of the on-device data described above (catalog data, thumbnails, bookmarks, and encrypted NAS connection details) via Android's own app-removal mechanism.</li>
+          <li>Individual catalogs, bookmarks, and tags can be deleted at any time from within the app.</li>
+          <li>A backup file you exported yourself lives outside the app's own storage, so deleting it requires your own action.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="security">
+      <div data-lang-content="ja">
+        <h2><span class="num">7</span>セキュリティ</h2>
+        <p>NASの接続情報（パスワードを含む）は、Android OS標準のAndroid Keystoreシステムを用いて暗号化した状態で保存しています。この暗号鍵は端末外へ持ち出せない仕組みになっています。アプリ内のログ出力に、パスワードなどの認証情報が記録されることはありません。</p>
+      </div>
+      <div data-lang-content="en">
+        <h2><span class="num">7</span>Security</h2>
+        <p>NAS connection details, including passwords, are encrypted using the Android Keystore system before being stored. The encryption key itself cannot be extracted from the device. Authentication details such as passwords are never written to the app's diagnostic logs.</p>
+      </div>
+    </section>
+
+    <section id="children">
+      <div data-lang-content="ja">
+        <h2><span class="num">8</span>お子様のプライバシー</h2>
+        <p>本アプリは、13歳未満のお子様を主な対象として設計されたものではなく、お子様から意図的に情報を収集することもありません。前述の通り、本アプリはそもそも個人を特定できる情報を収集・送信しません。</p>
+      </div>
+      <div data-lang-content="en">
+        <h2><span class="num">8</span>Children's Privacy</h2>
+        <p>This app is not directed at children under 13, and it does not knowingly collect information from children. As described throughout this policy, the app does not collect or transmit personally identifiable information from any user.</p>
+      </div>
+    </section>
+
+    <section id="changes">
+      <div data-lang-content="ja">
+        <h2><span class="num">9</span>本ポリシーの変更</h2>
+        <p>本ポリシーの内容は、アプリの機能追加や法令上の要請に応じて更新されることがあります。重要な変更がある場合は、このページの「最終更新日」を更新してお知らせします。定期的にご確認いただくことをおすすめします。</p>
+      </div>
+      <div data-lang-content="en">
+        <h2><span class="num">9</span>Changes to This Policy</h2>
+        <p>This policy may be updated to reflect new app features or legal requirements. Material changes will be reflected by updating the "Last updated" date at the top of this page. We recommend checking back periodically.</p>
+      </div>
+    </section>
+
+    <section id="contact">
+      <div data-lang-content="ja">
+        <h2><span class="num">10</span>お問い合わせ</h2>
+        <p>本ポリシーに関するご質問は、<a href="mailto:hrdttsy@gmail.com">hrdttsy@gmail.com</a> までご連絡ください。</p>
+      </div>
+      <div data-lang-content="en">
+        <h2><span class="num">10</span>Contact</h2>
+        <p>If you have questions about this policy, please contact <a href="mailto:hrdttsy@gmail.com">hrdttsy@gmail.com</a>.</p>
+      </div>
+    </section>
+
+  </article>
+</main>
+
+<footer>
+  <div data-lang-content="ja">
+    <p>HRD Vカタログ &mdash; 本ページはAndroid版アプリ「Vカタログ（Vcatalog）」のGoogle Play掲載用プライバシーポリシーです。</p>
+  </div>
+  <div data-lang-content="en">
+    <p>HRD Vcatalog &mdash; This page is the Google Play&ndash;listed privacy policy for the Vcatalog Android app.</p>
+  </div>
+</footer>
+
+<script>
+  (function () {
+    var root = document.documentElement;
+    var STORAGE_KEY = "vcatalog-privacy-lang";
+
+    function detectDefault() {
+      try {
+        var saved = localStorage.getItem(STORAGE_KEY);
+        if (saved === "ja" || saved === "en") return saved;
+      } catch (e) {}
+      return (navigator.language || "").toLowerCase().indexOf("ja") === 0 ? "ja" : "en";
+    }
+
+    function setLang(lang) {
+      root.setAttribute("data-active-lang", lang);
+      root.setAttribute("lang", lang);
+      document.querySelectorAll(".lang-toggle button").forEach(function (btn) {
+        btn.setAttribute("aria-pressed", btn.getAttribute("data-lang-btn") === lang ? "true" : "false");
+      });
+      try { localStorage.setItem(STORAGE_KEY, lang); } catch (e) {}
+    }
+
+    document.querySelectorAll(".lang-toggle button").forEach(function (btn) {
+      btn.addEventListener("click", function () {
+        setLang(btn.getAttribute("data-lang-btn"));
+      });
+    });
+
+    setLang(detectDefault());
+  })();
+</script>
+
+</body>
+</html>
